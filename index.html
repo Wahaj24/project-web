@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Pizza Hub</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://static.tossdown.com/images/8ad8868a-dc6d-440e-9849-1213da7b2367.webp') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #f3f4f6; /* Adjust background color to match the image */
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #dc2626; /* Changed to header color */
+      color: white;
+      padding: 1rem;
+    }
+
+    .navbar nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar ul li a:hover {
+      color: #e5e7eb;
+    }
+
+    /* Carousel */
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    /* Grid Layout */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .grid-item {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Deal Section */
+    .deal-section {
+      background-color: #fff;
+      padding: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .deal-section h2 {
+      margin: 1rem 0;
+      font-size: 2rem;
+      color: #dc2626;
+    }
+
+    .deal-section p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .deal-section .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      background-color: #dc2626;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
+
+    .deal-section .btn:hover {
+      background-color: #b91c1c;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1f2937; /* Changed to footer color */
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="https://static.tossdown.com/images/73afe7f2-e973-4cbe-b99a-b472903b62da.webp" alt="Logo">
+        Pizza Hub
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurant-website/src/pages/about/about.html">About Us</a></li>
+        <li><a href="restaurant-website/src/pages/contact/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+  <section class="carousel">
+    <div class="carousel-inner">
+      <!-- Removed Pizza 2 and Pizza 3 images -->
+    </div>
+  </section>
+
+  <!-- Deal Section -->
+  <section class="deal-section">
+    <h2>All Day Value Deal</h2>
+    <p>Enjoy our special All Day Value Deal with a regular pizza, garlic bread, and a drink at an unbeatable price!</p>
+    <a href="#" class="btn">Order Now</a>
+  </section>
+
+  <!-- Grid Layout -->
+  <section class="grid-layout">
+    <div class="grid-item">
+      <h3>Margherita Supreme</h3>
+      <p>Tomato sauce, mozzarella cheese, fresh basil leaves, sliced tomatoes.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Pepperoni Passion</h3>
+      <p>Tomato sauce, mozzarella cheese, pepperoni slices, black olives, red pepper flakes.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Veggie Delight</h3>
+      <p>Tomato sauce, mozzarella cheese, bell peppers, red onions, mushrooms, spinach.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Pizza Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
